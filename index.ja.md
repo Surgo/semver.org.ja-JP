@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Semantic Versioning
+title: セマンティックバージョニング
 ---
 
 セマンティックバージョニング

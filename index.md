@@ -1,18 +1,10 @@
 ---
 layout: default
-<<<<<<< HEAD
 title: Semantic Versioning 2.0.0-rc.1
 ---
 
 Semantic Versioning 2.0.0-rc.1
 ==============================
-=======
-title: Semantic Versioning 0.2.0
----
-
-Semantic Versioning 0.2.0
-=========================
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 
 In the world of software management there exists a dread place called
 "dependency hell." The bigger your system grows and the more packages you
@@ -56,7 +48,6 @@ could be declared in the code itself or exist strictly in documentation.
 However it is done, it should be precise and comprehensive.
 
 1. A normal version number MUST take the form X.Y.Z where X, Y, and Z are
-<<<<<<< HEAD
 non-negative integers. X is the major version, Y is the minor version, and Z
 is the patch version. Each element MUST increase numerically by increments of
 one. For instance: 1.9.0 -> 1.10.0 -> 1.11.0.
@@ -65,18 +56,6 @@ one. For instance: 1.9.0 -> 1.10.0 -> 1.11.0.
 version MUST be reset to zero. When a minor version number is incremented, the
 patch version MUST be reset to zero. For instance: 1.1.3 -> 2.0.0 and 2.1.7 ->
 2.2.0.
-=======
-integers. X is the major version, Y is the minor version, and Z is the patch
-version. Each element MUST increase numerically. For instance: 1.9.0 < 1.10.0
-< 1.11.0.
-
-1. A special version number MAY be denoted by appending an arbitrary string
-immediately following the patch version. The string MUST be comprised of only
-alphanumerics plus dash [0-9A-Za-z-] and MUST begin with an alpha character
-[A-Za-z]. Special versions satisfy but have a lower precedence than the
-associated normal version. Precedence SHOULD be determined by lexicographic
-ASCII sort order. For instance: 1.0.0beta1 < 1.0.0beta2 < 1.0.0.
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 
 1. Once a versioned package has been released, the contents of that version
 MUST NOT be modified. Any modifications must be released as a new version.
@@ -85,19 +64,14 @@ MUST NOT be modified. Any modifications must be released as a new version.
 at any time. The public API should not be considered stable.
 
 1. Version 1.0.0 defines the public API. The way in which the version number
-<<<<<<< HEAD
 is incremented after this release is dependent on this public API and how it
 changes.
-=======
-is incremented is now dependent on this public API and how it changes.
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 
 1. Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards
 compatible bug fixes are introduced. A bug fix is defined as an internal
 change that fixes incorrect behavior.
 
 1. Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards
-<<<<<<< HEAD
 compatible functionality is introduced to the public API. It MUST be
 incremented if any public API functionality is marked as deprecated. It MAY be
 incremented if substantial new functionality or improvements are introduced
@@ -132,32 +106,6 @@ Numeric identifiers always have lower precedence than non-numeric identifiers.
 Example: 1.0.0-alpha < 1.0.0-alpha.1 < 1.0.0-beta.2 < 1.0.0-beta.11 <
 1.0.0-rc.1 < 1.0.0-rc.1+build.1 < 1.0.0 < 1.0.0+0.3.7 < 1.3.7+build <
 1.3.7+build.2.b8f12d7 < 1.3.7+build.11.e0f985a.
-=======
-compatible functionality is introduced to the public API. It MAY be
-incremented if substantial new functionality or improvements are introduced
-within the private code. It MAY include patch level changes.
-
-1. Major version X (X.y.z | X > 0) MUST be incremented if any backwards
-incompatible changes are introduced to the public API. It MAY include minor
-and patch level changes.
-
-
-Tagging Specification (SemVerTag)
----------------------------------
-
-This sub-specification SHOULD be used if you use a version control system
-(Git, Mercurial, SVN, etc) to store your code. Using this system allows
-automated tools to inspect your package and determine SemVer compliance and
-released versions.
-
-1. When tagging releases in a version control system, the tag for a version
-MUST be "vX.Y.Z" e.g. "v3.1.0".
-
-1. The first revision that introduces SemVer compliance SHOULD be tagged
-"semver". This allows pre-existing projects to assume compliance at any
-arbitrary point and for automated tools to discover this fact.
-
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 
 Why Use Semantic Versioning?
 ----------------------------
@@ -196,14 +144,11 @@ them.
 FAQ
 ---
 
-<<<<<<< HEAD
 ### How should I deal with revisions in the 0.y.z initial development phase?
 
 The simplest thing to do is start your initial development release at 0.1.0
 and then increment the minor version for each subsequent release.
 
-=======
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 ### How do I know when to release 1.0.0?
 
 If your software is being used in production, it should probably already be
@@ -254,7 +199,6 @@ modification depends on whether you updated your dependencies in order to fix
 a bug or introduce new functionality. I would usually expect additional code
 for the latter instance, in which case it's obviously a minor level increment.
 
-<<<<<<< HEAD
 ### What should I do if the bug that is being fixed returns the code to being compliant with the public API (i.e. the code was incorrectly out of sync with the public API documentation)?
 
 Use your best judgment. If you have a huge audience that will be drastically
@@ -268,15 +212,12 @@ are important to your users, use the version number to inform them.
 
 Deprecating existing functionality is a normal part of software development and is often required to make forward progress. When you deprecate part of your public API, you should do two things: (1) update your documentation to let users know about the change, (2) issue a new minor release with the deprecation in place. Before you completely remove the functionality in a new major release there should be at least one minor release that contains the deprecation so that users can smoothly transition to the new API.
 
-=======
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
 
 About
 -----
 
 The Semantic Versioning specification is authored by [Tom Preston-Werner](http://tom.preston-werner.com), inventor of Gravatars and cofounder of GitHub.
 
-<<<<<<< HEAD
 If you'd like to leave feedback, please [open an issue on GitHub](https://github.com/mojombo/semver/issues).
 
 
@@ -285,6 +226,3 @@ License
 
 Creative Commons - CC BY 3.0
 http://creativecommons.org/licenses/by/3.0/
-=======
-If you'd like to leave feedback, please [open an issue on GitHub](https://github.com/mojombo/semver.org/issues).
->>>>>>> 5b8cd458b88557faf1c838d44374387083eefc89
